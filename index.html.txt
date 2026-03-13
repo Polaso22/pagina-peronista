@@ -17,23 +17,27 @@ background:#ffffff;
 color:#222;
 }
 
+/* encabezado */
+
 header{
 background:#0b3d91;
 color:white;
-padding:25px;
 text-align:center;
+padding:20px;
 }
 
 header img{
-height:80px;
+height:70px;
 margin:10px;
 }
 
+/* menú */
+
 nav{
-background:#f4f4f4;
+background:#ffffff;
+border-bottom:4px solid #d4af37;
 padding:15px;
 text-align:center;
-border-bottom:3px solid #d4af37;
 }
 
 nav a{
@@ -44,21 +48,27 @@ text-decoration:none;
 font-size:18px;
 }
 
-nav a:hover{
-color:#d4af37;
-}
+/* portada */
 
-.hero{
-text-align:center;
-padding:90px 20px;
+.portada{
 background:linear-gradient(#0b3d91,#1d5fd3);
 color:white;
+text-align:center;
+padding:120px 20px;
 }
 
-.hero img{
-width:220px;
+.portada h1{
+font-size:45px;
 margin-bottom:20px;
 }
+
+.portada p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+}
+
+/* secciones */
 
 .section{
 padding:70px 20px;
@@ -72,9 +82,11 @@ border-bottom:3px solid #d4af37;
 padding-bottom:10px;
 }
 
+/* noticias */
+
 .noticias{
 display:grid;
-grid-template-columns:1fr 1fr;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 margin-top:30px;
 }
@@ -85,6 +97,8 @@ padding:25px;
 border-radius:10px;
 border-left:5px solid #d4af37;
 }
+
+/* galeria */
 
 .galeria{
 display:grid;
@@ -98,13 +112,16 @@ width:100%;
 border-radius:10px;
 }
 
+/* contacto */
+
 .contacto{
 background:#f4f4f4;
 padding:30px;
 border-radius:10px;
 border-left:5px solid #d4af37;
-margin-top:20px;
 }
+
+/* footer */
 
 footer{
 background:#0b3d91;
@@ -125,74 +142,70 @@ margin-top:40px;
 <img src="frente.png">
 <img src="pj.png">
 
-<h1>Frente de Trabajadorxs Peronistas</h1>
+<h2>Frente de Trabajadorxs Peronistas</h2>
 
 </header>
 
 <nav>
 
-<a href="#inicio">🏠 Inicio</a>
-<a href="#quienes">✊ Quiénes somos</a>
-<a href="#noticias">📰 Noticias</a>
-<a href="#galeria">📸 Galería</a>
-<a href="#contacto">📩 Contacto</a>
+<a href="#inicio">Inicio</a>
+<a href="#quienes">Quiénes somos</a>
+<a href="#noticias">Noticias</a>
+<a href="#galeria">Galería</a>
+<a href="#contacto">Contacto</a>
 
 </nav>
 
-<section id="inicio" class="hero">
+<section class="portada" id="inicio">
 
-<img src="frente.png">
-
-<h2>Organización, Justicia Social y Trabajo</h2>
+<h1>Organización, Justicia Social y Trabajo</h1>
 
 <p>
-El Frente de Trabajadorxs Peronistas lucha por la dignidad del trabajo,
-la justicia social y la organización del pueblo.
+Construyendo una Argentina con justicia social,
+independencia económica y soberanía política.
 </p>
 
 </section>
 
-<section id="quienes" class="section">
+<section class="section" id="quienes">
 
 <h2>Quiénes somos</h2>
 
 <p>
-Somos una organización política y social comprometida con los valores
-del movimiento nacional justicialista:
-</p>
-
-<ul>
-<li>Justicia Social</li>
-<li>Independencia Económica</li>
-<li>Soberanía Política</li>
-</ul>
-
-<p>
-Trabajamos junto a trabajadores, organizaciones sociales y militantes
-para construir una Argentina con igualdad y trabajo digno.
+El Frente de Trabajadorxs Peronistas es una organización política
+y social comprometida con los valores del movimiento nacional
+justicialista y la defensa del trabajo.
 </p>
 
 </section>
 
-<section id="noticias" class="section">
+<section class="section" id="noticias">
 
 <h2>Noticias / Comunicados</h2>
 
 <div class="noticias">
 
 <div class="noticia">
-<h3>Encuentro de militancia</h3>
+<h3>Plenario de militancia</h3>
 <p>
-Realizamos una jornada de organización y debate político para fortalecer
-el movimiento nacional.
+Realizamos un encuentro de organización para fortalecer el
+movimiento nacional y popular.
 </p>
 </div>
 
 <div class="noticia">
-<h3>Comunicado del frente</h3>
+<h3>Comunicado político</h3>
 <p>
-Ratificamos nuestro compromiso con la defensa del trabajo,
-la producción nacional y la justicia social.
+Ratificamos nuestro compromiso con la justicia social y la
+defensa del trabajo argentino.
+</p>
+</div>
+
+<div class="noticia">
+<h3>Actividad territorial</h3>
+<p>
+Militantes del frente realizaron una jornada solidaria junto
+a trabajadores del barrio.
 </p>
 </div>
 
@@ -200,7 +213,7 @@ la producción nacional y la justicia social.
 
 </section>
 
-<section id="galeria" class="section">
+<section class="section" id="galeria">
 
 <h2>Galería</h2>
 
@@ -209,23 +222,19 @@ la producción nacional y la justicia social.
 <img src="frente.png">
 <img src="pj.png">
 <img src="frente.png">
-<img src="pj.png">
 
 </div>
 
 </section>
 
-<section id="contacto" class="section">
+<section class="section" id="contacto">
 
 <h2>Contacto</h2>
 
 <div class="contacto">
 
-<p><b>Email:</b> contacto@trabajadorxsperonistas.org</p>
-
-<p><b>Instagram:</b> @trabajadorxsperonistas</p>
-
-<p><b>Ciudad:</b> Argentina</p>
+<p>Email: contacto@trabajadorxsperonistas.org</p>
+<p>Instagram: @trabajadorxsperonistas</p>
 
 </div>
 
